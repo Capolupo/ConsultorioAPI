@@ -14,7 +14,7 @@ class PacienteService{
         return pacienteRepository.findAll()
     }
 
-
+/*
     fun buscarPacientePorIdade(idade: Int): List<Paciente>{
         return pacienteRepository.findByIdade(idade)
     }
@@ -26,7 +26,7 @@ class PacienteService{
     fun buscarPacientePorCPF(cpf: String) : Paciente {
         return pacienteRepository.findByCPF(cpf)
     }
-
+*/
 
     fun salvar(paciente: Paciente){
         pacienteRepository.save(paciente)

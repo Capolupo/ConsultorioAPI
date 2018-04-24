@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository
 interface PacienteRepository : MongoRepository<Paciente, String>{
     fun findByIdade(idade: Int)                  : List<Paciente>
     fun findByNomeContaining(nome: String)       : List<Paciente>
-    fun findByCPF(cpf: String)                   : Paciente
+    //fun findByCPF(cpf: String)                   : Paciente
 }
