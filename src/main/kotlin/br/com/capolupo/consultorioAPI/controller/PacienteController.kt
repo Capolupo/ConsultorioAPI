@@ -23,6 +23,12 @@ class PacienteController{
         return consultorioService.buscarCarroPorPlaca(placa)
     }
     */
+    
+    @DeleteMapping
+    fun excluir(@RequestBody paciente: Paciente){
+        pacienteService.excluir(paciente)
+    }
+    
     @PostMapping
     fun salvar(@RequestBody paciente: Paciente){
         pacienteService.salvar(paciente)
