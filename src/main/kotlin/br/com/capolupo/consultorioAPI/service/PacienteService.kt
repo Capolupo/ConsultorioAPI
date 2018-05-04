@@ -27,7 +27,9 @@ class PacienteService{
         return pacienteRepository.findByCPF(cpf)
     }
 */
-
+    fun excluir(paciente: Paciente){
+        pacienteRepository.delete(paciente)
+    }
     fun salvar(paciente: Paciente){
         pacienteRepository.save(paciente)
     }
